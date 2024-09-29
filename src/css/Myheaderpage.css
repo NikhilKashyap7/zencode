@@ -1,0 +1,56 @@
+.navbar{
+    background: rgb(134,135,142);
+    background: linear-gradient(90deg, rgba(134,135,142,1) 0%, rgba(228,41,41,1) 99%);
+padding-left: 20px;
+display: flex;
+}
+.brand-logo{
+
+    width: 180px;
+    height: 80px;
+    filter: contrast(10px 2px blue) ;
+}
+.nav-contact{
+    list-style-type: none;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    margin-left: 50%;
+}
+
+.conatact{
+    padding-right: 25px;
+}
+.btn-custom {
+    background-color: #f05a57;
+    color: white;
+    line-height: 12px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btn-custom:hover {
+    background-color: transparent;
+    filter: drop-shadow(5px 5px 7px white);
+
+}
+.nav-itmes{
+    width: 100%;
+    margin-left: 55%;
+    display: flex;
+padding-top: 15px;
+}
+.dropdown-toggle:hover{
+ color: white;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  
+  /* Default hidden state for dropdown menu */
+  .dropdown-menu {
+    display: none;
+    transition: all 0.3s ease;
+  }

@@ -1,0 +1,22 @@
+@media screen and (max-width: 990px){
+    .nav-contact{
+    list-style-type: none;
+    position: absolute;
+    top: 150px;
+}
+
+.conatact{
+    /* padding-right: 25px; */
+    display: none;
+}
+.btn-custom {
+    background-color: #dc3545;
+    color: white;
+    line-height: 12px;
+}
+
+.btn-custom:hover {
+    background-color: #f05a57;
+
+}
+}
