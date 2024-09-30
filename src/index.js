@@ -8,6 +8,12 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Mylandingpage from "./modules/dashboard/Mylandingpage"
 import Mymainpage from "./modules/dashboard/Mymainpage"
 import "./css/Myheaderpage.css"
+import "./css/Mymainpage.css"
+import "./css/Myloginpage.css"
+import "./css/Myregistorpage.css"
+import 'react-toastify/dist/ReactToastify.css';
+import Myregistorpage from "./modules/auth/Myregistorpage"
+import Myloginpage from './modules/auth/Myloginpage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,6 +21,9 @@ root.render(
     <Routes>
       <Route path='' element={<Mylandingpage/>} />
       <Route path='/Mymainpage' element={<Mymainpage/>}/>
+      <Route path='/Myloginpage' element={<Myloginpage/>}/>
+      <Route path='/Myregistorpage' element={<Myregistorpage/>}/>
+
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

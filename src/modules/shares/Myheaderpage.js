@@ -4,26 +4,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone} from '@fortawesome/free-solid-svg-icons';
 import {faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import {faMessage} from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 function Myheaderpage() {
     return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img class="brand-logo" src={logo}/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-    <div  class="d-none d-lg-flex  nav-contact ">
-        
-        <li className="conatact"><FontAwesomeIcon icon={faPhone} /> +914257896321</li>
-        <li className="conatact"><FontAwesomeIcon icon={faWhatsapp} />+914257896321</li>
-        <li className="conatact"><FontAwesomeIcon icon={faMessage} />enquiry@zencode.com</li>
-
-        </div>
-        <div className="nav-itmes">
+    <div class="collapse navbar-collapse navbars " id="navbarNav">
+    
+        <div class=" d-flex container-fluid">
       <ul class="navbar-nav ">
         
-        <li class="nav-item">
+        <li class="nav-item container-fluid">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
 
@@ -49,21 +44,22 @@ function Myheaderpage() {
                     </ul>
                 </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Features</a>
+          <a class="nav-link active" href="#">Placement</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Pricing</a>
+          <a class="nav-link active" href="#">Blog</a>
         </li>
         
-        
+        <li><Link to='/Myloginpage' class="btn btn-custom me-2">Login</Link></li>
+        <li><a href="#" class="btn btn-custom me-2">Contact Us</a></li>
       </ul>
-      <div class="d-lg-flex" tabIndex="-1" aria-haspopup="true">
-                <a href="#" class="btn btn-custom me-2">Login / Signup</a>
-                <a href="#" class="btn btn-custom">Contact Us</a>
-            </div>
+      
+               
+            
             </div>
     </div>
-  </div>
+    </div>
+
 </nav>
     )
 }
